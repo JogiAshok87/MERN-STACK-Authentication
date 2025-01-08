@@ -18,7 +18,7 @@ const Login = () => {
   // Handling form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:8000/api/auth/login',data)
+    axios.post('http://localhost:5000/api/auth/login',data)
     .then(res=>{
       localStorage.setItem('token',res.data.token);
       toast.success("User Successfully Logined!", {

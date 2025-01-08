@@ -34,7 +34,7 @@ const Register = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:8000/api/auth/register', data); 
+      const response = await axios.post('http://localhost:5000/api/auth/register', data); 
       localStorage.setItem('token', response.data.token); 
       toast.success("User registered successfully", {
               position: "top-right",
